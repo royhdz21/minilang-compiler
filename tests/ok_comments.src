@@ -1,0 +1,4 @@
+/* block
+   comment */
+int x; // trailing
+x = 3; /* inline */ print(x);

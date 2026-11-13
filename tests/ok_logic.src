@@ -1,0 +1,12 @@
+int x;
+bool a, b;
+x = 5;
+a = x > 3;
+b = !a || x == 5 && x < 10;
+print(a);          // true
+print(b);          // true
+print(!b);         // false
+print(a && !b);    // false
+x = 0;
+if (x != 0 && 10 / x > 1) { print(111); } else { print(0); }   // short-circuit: no division
+if (x == 0 || 10 / x > 1) { print(1); }                        // short-circuit

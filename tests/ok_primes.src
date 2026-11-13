@@ -1,0 +1,13 @@
+int n, d;
+bool is_prime;
+n = 2;
+while (n <= 20) {
+  is_prime = true;
+  d = 2;
+  while (d * d <= n) {
+    if (n - (n / d) * d == 0) { is_prime = false; }
+    d = d + 1;
+  }
+  if (is_prime) { print(n); }
+  n = n + 1;
+}

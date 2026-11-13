@@ -1,0 +1,9 @@
+// the user variable t1 must not clash with compiler temporaries
+int a, b, t1;
+read(a); read(b);
+while (b != 0) {
+  t1 = b;
+  b = a - (a / b) * b;
+  a = t1;
+}
+print(a);

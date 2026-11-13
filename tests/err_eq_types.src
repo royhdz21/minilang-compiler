@@ -1,0 +1,2 @@
+int x; bool b;
+if (x == b) { x = 1; }

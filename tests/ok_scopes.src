@@ -1,0 +1,14 @@
+int x;
+x = 1;
+{
+  int x;
+  x = 2;
+  print(x);   // 2
+}
+print(x);     // 1
+if (x == 1) {
+  bool x;
+  x = true;
+  print(x);   // true
+}
+print(x);     // 1
